@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Fundo e cores principais */
+  body {
+    background: linear-gradient(135deg, #dbe9f4, #f4f4f9);
+    color: #2c3e50;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #34495e;
+  }
+  
+  header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #1a3c6e; /* Azul Fusca */
+    text-shadow: 1px 1px 2px #aabed8;
+  }
+  
+  /* Contador */
+  #contador {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #f39c12; /* Laranja/Amarelo para destaque */
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+  }
+  
+  /* Seções */
+  section {
+    background: #ffffffdd;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    line-height: 1.5;
+    color: #34495e;
+  }
+  
+  /* Títulos das seções */
+  section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #1a3c6e;
+    border-bottom: 3px solid #f39c12;
+    padding-bottom: 5px;
+  }
+  
+  /* Listas */
+  ul {
+    margin-left: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Carrossel */
+  .carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto 15px auto;
+  }
+  
+  .carrossel button {
+    background-color: #1a3c6e; /* Azul Fusca */
+    border: none;
+    color: #f4f4f9;
+    font-size: 1.8em;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    box-shadow: 0 3px 6px rgba(26,60,110,0.5);
+  }
+  
+  .carrossel button:hover {
+    background-color: #f39c12; /* Laranja para hover */
+    box-shadow: 0 4px 12px rgba(243,156,18,0.6);
+  }
+  
+  /* Imagens do carrossel */
+  .imagens {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(26,60,110,0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .imagens:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Legenda do carrossel */
+  .legenda {
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 8px;
+  }
+  
+  /* Responsividade simples */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2em;
+    }
+    .carrossel {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .carrossel button {
+      width: 100%;
+    }
+    .imagens {
+      max-width: 100%;
+    }
+  }
+  
